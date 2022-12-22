@@ -1,0 +1,19 @@
+function log(value, { kind, name }) {
+  if (kind === "class") {
+    const newClass = class extends value {
+      constructor(...args) {
+        super(...args);
+        console.log(`constructing a class with arguments: ${args.join(", ")}`);
+      }
+    }
+      console.log(`An instance of the ${name} ${kind} has been created`)
+      return newClass;
+  }
+}
+
+@log
+class Person {
+  constructor(name, profession) {
+  }
+}
+const lawrence = new Person('Lawrence Eagles', "Developer");
