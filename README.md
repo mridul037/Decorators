@@ -1,1 +1,1 @@
-A example pecice of code for creating own decorators
+A example peice of code for creating own decorators
